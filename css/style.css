@@ -92,11 +92,25 @@ footer p{margin:4px 0}footer a{color:#fff}
 .drawer header{position:static;background:transparent;border:0;display:flex;justify-content:space-between;align-items:center;padding:0 0 10px;height:auto}
 .drawer h2{font-size:1.4rem}
 .drawer .x{border:0;background:transparent;font-size:1.6rem;line-height:1}
-.lines{flex:1;overflow:auto;margin:0;padding:0;list-style:none}
+.lines{flex:0 1 auto;max-height:32vh;overflow:auto;margin:0;padding:0;list-style:none}
 .lines li{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
 .lines small{color:var(--muted);display:block}
 .tot{display:flex;justify-content:space-between;font-size:1.2rem;font-weight:600;margin:14px 0 4px}
 .note{color:var(--muted);font-size:.9rem;margin:0 0 12px}
 .drawer .btn{background:var(--wa);color:#fff;text-align:center}
 .drawer .btn[aria-disabled="true"]{background:var(--line);color:var(--muted);pointer-events:none}
+.drawer{overflow-y:auto}
+.ship{margin-top:12px}
+.ship label{display:block;font-weight:600;font-size:.95rem;margin:10px 0 4px}
+.ship input,.ship textarea{width:100%;font:16px/1.4 "Hind Madurai",system-ui,sans-serif;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.ship textarea{resize:vertical}
+.err{color:#b3261e;font-size:.92rem;margin:8px 0 0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .err{color:#ef7a72}}
+.bulk{background:var(--tint)}
+.bulk .two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.bulk .two>div{border-top:3px solid var(--gold);padding-top:14px}
+.bulk h3{font-size:1.3rem}
+.bulk p{margin:6px 0 16px;max-width:30em}
+.bulk .btn{background:var(--wa);color:#fff}
+@media (max-width:700px){.bulk .two{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

@@ -14,7 +14,7 @@
 <div class="top">Order on WhatsApp · We send a secure payment link once you confirm</div>
 <header><div class="w">
   <a href="#top" aria-label="Uzhavu home"><img src="images/logo-white.png" alt="Uzhavu – from our fields to your kitchen"></a>
-  <nav aria-label="Main"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#how">How to order</a><a href="#faq">FAQ</a></nav>
+  <nav aria-label="Main"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#how">How to order</a><a href="#bulk">Bulk &amp; stores</a><a href="#faq">FAQ</a></nav>
   <button class="cartbtn" id="open" type="button">Cart (<span id="n">0</span>)</button>
 </div></header>
 
@@ -55,9 +55,18 @@
   <h2>How to order</h2>
   <ol class="how">
     <li><b>Choose</b><p>Add your products and quantities. The total updates as you go.</p></li>
-    <li><b>Send on WhatsApp</b><p>Your order opens as a ready message. We confirm stock and delivery charges.</p></li>
+    <li><b>Send on WhatsApp</b><p>Add your name and delivery address in the cart. Your order opens as a ready WhatsApp message, and we confirm stock and delivery charges.</p></li>
     <li><b>Pay and receive</b><p>We send a secure payment link for the exact amount, then ship your order.</p></li>
   </ol>
+</div></section>
+
+<section class="bulk sec" id="bulk"><div class="w">
+  <h2>Bulk orders and store partnerships</h2>
+  <p class="sub">Message us on the same WhatsApp number and we will reply with details and a price.</p>
+  <div class="two">
+    <div><h3>Bulk or gift orders</h3><p>Ordering for a function, a gift hamper or a large family stock-up? Tell us the products and quantities you need.</p><a class="btn" id="b1" href="#" target="_blank" rel="noopener">Ask about a bulk order</a></div>
+    <div><h3>Keep Uzhavu in your store</h3><p>Do you run a grocery, organic or gift store? We can supply our masalas, podis and herbal teas for your shelves.</p><a class="btn" id="b2" href="#" target="_blank" rel="noopener">Become a stockist</a></div>
+  </div>
 </div></section>
 
 <section class="sec" id="faq" style="padding-top:0"><div class="w">
@@ -81,6 +90,11 @@
 <aside class="drawer" id="drawer" aria-label="Your order">
   <header><h2>Your order</h2><button class="x" id="close" type="button" aria-label="Close">×</button></header>
   <ul class="lines" id="lines"></ul>
+  <div class="ship">
+    <label for="fn">Your name</label><input id="fn" type="text" autocomplete="name">
+    <label for="fa">Delivery address with pincode</label><textarea id="fa" rows="3" autocomplete="street-address"></textarea>
+    <p class="err" id="err" role="alert" hidden>Please add your name and delivery address.</p>
+  </div>
   <div class="tot"><span>Products total</span><span id="tot">₹0</span></div>
   <p class="note">Delivery charges are extra and confirmed on WhatsApp.</p>
   <a class="btn" id="wa" href="#" target="_blank" rel="noopener" aria-disabled="true">Send order on WhatsApp</a>

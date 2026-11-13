@@ -50,11 +50,17 @@ function update(){let n=0,t=0,L=[],H="";
  $("bar").hidden=!n;$("c2").textContent=n+(n>1?" items":" item");$("t2").textContent="₹"+t;
  const a=$("wa");if(!n){a.setAttribute("aria-disabled","true");a.href="#";return}
  a.removeAttribute("aria-disabled");
- a.href=`https://wa.me/${WA}?text=`+encodeURIComponent(`Hi Uzhavu, I would like to order:\n${L.join("\n")}\n\nProducts total: ₹${t}\nPlease confirm delivery charges and share the payment link. My delivery address:`)}
+ a.href=`https://wa.me/${WA}?text=`+encodeURIComponent(`Hi Uzhavu, I would like to order:\n${L.join("\n")}\n\nProducts total: ₹${t}\n\nName: ${$("fn").value.trim()}\nDelivery address: ${$("fa").value.trim()}\n\nPlease confirm delivery charges and share the payment link.`)}
 const dr=$("drawer"),sc=$("scrim");
 function openD(){dr.classList.add("open");sc.hidden=false;$("close").focus()}
 function closeD(){dr.classList.remove("open");sc.hidden=true;$("open").focus()}
 $("open").onclick=openD;$("open2").onclick=openD;$("close").onclick=closeD;sc.onclick=closeD;
 document.addEventListener("keydown",e=>{if(e.key=="Escape"&&dr.classList.contains("open"))closeD()});
 $("fwa").href=`https://wa.me/${WA}`;
+const wa=t=>`https://wa.me/${WA}?text=`+encodeURIComponent(t);
+$("b1").href=wa("Hi Uzhavu, I would like to enquire about a bulk order.\nProducts and quantities:");
+$("b2").href=wa("Hi Uzhavu, I run a store and would like to stock your products.\nStore name and location:");
+["fn","fa"].forEach(id=>$(id).addEventListener("input",()=>{$("err").hidden=true;update()}));
+$("wa").addEventListener("click",e=>{const n=$("fn").value.trim(),a=$("fa").value.trim();
+ if(!n||!a){e.preventDefault();$("err").hidden=false;(n?$("fa"):$("fn")).focus()}});
 update();

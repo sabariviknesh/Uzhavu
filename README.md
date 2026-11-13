@@ -12,6 +12,7 @@ images/             logos and product pouch images (images/products/)
 ## Things you will edit most often (js/app.js)
 - `WA` (top of the file): the WhatsApp business number, country code first, no + or spaces.
 - `P` (product list): name, Tamil name, price, weight and group for each product. The image for each product is the one at the same position in `IMG`.
+- Bulk-order and stockist messages are the `b1` and `b2` lines near the bottom of `js/app.js`.
 - To change a product photo, replace the file in `images/products/` and keep the same file name.
 - FSSAI number, address and Instagram link are in the footer of `index.html`.
 

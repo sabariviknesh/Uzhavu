@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Uzhavu – Homemade masalas, podis & herbal teas from Namakkal</title>
+<meta name="description" content="Homemade masalas, podis and herbal teas from Namakkal. Farm-sourced, naturally sun dried, no added colours or preservatives. Order on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🌿%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;700&family=Hind+Madurai:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="top">Order on WhatsApp · We send a secure payment link once you confirm</div>
+<header><div class="w">
+  <a href="#top" aria-label="Uzhavu home"><img src="images/logo-white.png" alt="Uzhavu – from our fields to your kitchen"></a>
+  <nav aria-label="Main"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#how">How to order</a><a href="#faq">FAQ</a></nav>
+  <button class="cartbtn" id="open" type="button">Cart (<span id="n">0</span>)</button>
+</div></header>
+
+<section class="hero" id="top"><div class="w">
+  <div>
+    <h1>Homemade masalas, podis and herbal teas from Namakkal.</h1>
+    <p>Made in small batches by village women, with ingredients from our own farms and trusted local farmers. Naturally sun dried, with no added colours or preservatives.</p>
+    <a class="btn" href="#shop">Shop all products</a>
+  </div>
+  <div class="fan" aria-hidden="true"><img src="images/products/turmeric-powder.webp" alt=""><img src="images/products/pirandai-powder.webp" alt=""><img src="images/products/avarampoo-tea.webp" alt=""></div>
+</div></section>
+
+<div class="w"><ul class="trust">
+  <li>Ingredients from our own farms and local farmers</li><li>Naturally sun dried</li>
+  <li>No added colours or preservatives</li><li>FSSAI licensed and GST registered</li></ul></div>
+
+<section class="sec"><div class="w">
+  <h2>Shop by type</h2><p class="sub">Teas and health mixes for daily wellness, podis for rice and tiffin, and masalas for the everyday kitchen.</p>
+  <div class="cats" id="cats"></div>
+</div></section>
+
+<section class="sec" id="shop" style="padding-top:8px"><div class="w">
+  <h2>Our products</h2><p class="sub">Tap Add, set the quantity, and send your order on WhatsApp.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="story sec" id="story"><div class="w">
+  <div>
+    <h2>From our fields, through the hands of our village women, to your kitchen.</h2>
+    <p>Uzhavu was started by an agriculturist mother-in-law and her engineer daughter-in-law, two generations who share a love for authentic taste and good ingredients.</p>
+    <p>We are a women-led company. Women from our village work across our production, and every product is prepared in our clean production unit using traditional methods. The more Uzhavu grows, the more we can source from our farmers and the more work we can create for women in our community.</p>
+  </div>
+  <img src="images/products/sesame-powder.webp" alt="Uzhavu sesame powder pouch">
+</div></section>
+
+<section class="sec" id="how"><div class="w">
+  <h2>How to order</h2>
+  <ol class="how">
+    <li><b>Choose</b><p>Add your products and quantities. The total updates as you go.</p></li>
+    <li><b>Send on WhatsApp</b><p>Your order opens as a ready message. We confirm stock and delivery charges.</p></li>
+    <li><b>Pay and receive</b><p>We send a secure payment link for the exact amount, then ship your order.</p></li>
+  </ol>
+</div></section>
+
+<section class="sec" id="faq" style="padding-top:0"><div class="w">
+  <h2>Questions</h2>
+  <details><summary>How do I pay?</summary><p>After you send your order on WhatsApp, we reply with a payment link for the exact total. You can pay by UPI, card or netbanking.</p></details>
+  <details><summary>What are the delivery charges?</summary><p>Delivery depends on your location and the size of your order. We confirm the charge on WhatsApp before you pay.</p></details>
+  <details><summary>Do your products contain preservatives or added colours?</summary><p>No. We add no colours and no preservatives, and our spices are naturally sun dried.</p></details>
+  <details><summary>How should I store them?</summary><p>Follow the instructions on the pack. As a general rule, keep packs tightly closed in a cool, dry place and use a dry spoon.</p></details>
+  <details><summary>Where else can I find Uzhavu?</summary><p>On Instagram and at pop-ups and farmers markets.</p></details>
+</div></section>
+
+<footer><div class="w">
+  <img src="images/logo-white.png" alt="Uzhavu">
+  <p>Uzhavu, Namakkal, Tamil Nadu</p>
+  <p>FSSAI licence no. 12425014000443</p>
+  <p>Instagram: <a href="https://instagram.com/uzhavu_">@uzhavu_</a> · WhatsApp: <a id="fwa" href="#">chat with us</a></p>
+</div></footer>
+
+<div class="bar" id="bar" hidden><div class="in"><div><span id="c2"></span><br><b id="t2"></b></div><button class="btn" id="open2" type="button">View order</button></div></div>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Your order">
+  <header><h2>Your order</h2><button class="x" id="close" type="button" aria-label="Close">×</button></header>
+  <ul class="lines" id="lines"></ul>
+  <div class="tot"><span>Products total</span><span id="tot">₹0</span></div>
+  <p class="note">Delivery charges are extra and confirmed on WhatsApp.</p>
+  <a class="btn" id="wa" href="#" target="_blank" rel="noopener" aria-disabled="true">Send order on WhatsApp</a>
+</aside>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
